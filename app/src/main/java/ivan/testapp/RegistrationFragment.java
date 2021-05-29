@@ -36,8 +36,8 @@ public class RegistrationFragment extends Fragment implements DatePickerDialog.O
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
 
+        super.onViewCreated(view, savedInstanceState);
 
         view.findViewById(R.id.button_first).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,21 +68,17 @@ public class RegistrationFragment extends Fragment implements DatePickerDialog.O
                 Calendar.getInstance().get(Calendar.MONTH),
                 Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
         );
-        datePickerDialog.getDatePicker().setMaxDate((System.currentTimeMillis() ));
+        datePickerDialog.getDatePicker().setMaxDate((System.currentTimeMillis()));
         datePickerDialog.show();
     }
 
     @Override
     public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
+
         month++;
-        String dayOfMonthRepresent = (dayOfMonth<10)?"0"+dayOfMonth:Integer.toString(dayOfMonth);
-        String monthRepresent = (month<10)? "0"+ month : Integer.toString(month);
-        String date = "Ваша дата рождения:\n " + dayOfMonthRepresent  + "." + monthRepresent + "." +  year;
-
-        Log.d("prov",Calendar.getInstance().getTime().toString());
+        String dayOfMonthRepresent = (dayOfMonth < 10) ? "0" + dayOfMonth : Integer.toString(dayOfMonth);
+        String monthRepresent = (month < 10) ? "0" + month : Integer.toString(month);
+        String date = "Ваша дата рождения:\n " + dayOfMonthRepresent + "." + monthRepresent + "." + year;
         dateText.setText(date);
-
-
-
     }
 }
