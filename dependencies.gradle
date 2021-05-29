@@ -1,6 +1,6 @@
 ext.Versions = [
         APP_COMPAT: "1.2.0",
-        GRADLE    : "4.0.1",
+        GRADLE    : '4.2.1',
         NAVIGATION: "2.1.0"
 
 ]
