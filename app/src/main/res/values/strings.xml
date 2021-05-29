@@ -4,7 +4,7 @@
     <!-- Strings used for fragments for navigation -->
 
     <string name="next">Зарегистрироваться!</string>
-    <string name="previous">Previous</string>
+    <string name="previous">Вернуться назад</string>
     <string name="date_editText">Введите дату рождения</string>
     <string name="family_editText">Введите фамилию</string>
     <string name="name_editText">Введите имя</string>
@@ -12,4 +12,13 @@
     <string name="button_set_date_string">Выберете дату рождения</string>
     <string name="hint_text_date">Ваша дата рождения:</string>
     <string name="hello_second_fragment">Hello second fragment</string>
+
+    <string name="dateFormat">Ваша дата рождения: %d%d.%d%d.%d</string>
+    <string name="hint_password">Введите пароль</string>
+    <string name="hint_repeat_password">Повторите пароль</string>
+    <string name="name">Узнать имя</string>
+    <string name="errror_name">Имя должно начинаться с заглавной и содержать только русские буквы</string>
+    <string name="error_family">Фамилия должна начинаться с заглавной буквы и состоять только из русских букв</string>
+    <string name="error_compare_password">Пароли должны совпадать</string>
+    <string name="error_correct_password">Обязательно включение заглавных, строчных английских букв и цифр, минимум 6 символов</string>
 </resources>

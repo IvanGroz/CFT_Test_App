@@ -1,15 +1,20 @@
 ext.Versions = [
-        APP_COMPAT: "1.2.0",
-        GRADLE    : '4.2.1',
-        NAVIGATION: "2.1.0"
-
+        APP_COMPAT       : "1.2.0",
+        GRADLE           : '4.2.1',
+        NAVIGATION       : "2.1.0",
+        MATERIAL         : "1.3.0",
+        CONSTRAINT_LAYOUT: "2.0.4",
+        FRAGMENT         : '1.2.5'
 ]
 
 ext.Dependencies = [
-        APP_COMPAT: "androidx.appcompat:appcompat:${Versions.APP_COMPAT}",
-        GRADLE    : "com.android.tools.build:gradle:${Versions.GRADLE}",
+        APP_COMPAT       : "androidx.appcompat:appcompat:${Versions.APP_COMPAT}",
+        GRADLE           : "com.android.tools.build:gradle:${Versions.GRADLE}",
+        MATERIAL         : "com.google.android.material:material:${Versions.MATERIAL}",
+        CONSTRAINT_LAYOUT: "androidx.constraintlayout:constraintlayout:${Versions.CONSTRAINT_LAYOUT}",
+        FRAGMENT         : "androidx.fragment:fragment:${Versions.FRAGMENT}",
 
-        NAVIGATION: [
+        NAVIGATION       : [
                 FRAGMENT: "androidx.navigation:navigation-fragment:${Versions.NAVIGATION}",
                 UI      : "androidx.navigation:navigation-ui:${Versions.NAVIGATION}"
         ]
