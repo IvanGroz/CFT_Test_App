@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/RegistrationFragment">
+
+    <fragment
+        android:id="@+id/RegistrationFragment"
+        android:name="ivan.testapp.RegistrationFragment"
+
+        tools:layout="@layout/registration_fragment">
+
+        <action
+            android:id="@+id/action_RegistrationFragment_to_HelloFragment"
+            app:destination="@id/HelloFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/HelloFragment"
+        android:name="ivan.testapp.HelloFragment"
+
+        tools:layout="@layout/hello_fragment">
+        <action
+            android:id="@+id/action_HelloFragment_to_RegistrationFragment"
+            app:destination="@id/RegistrationFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"/>
+    </fragment>
+</navigation>

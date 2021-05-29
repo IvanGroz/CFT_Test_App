@@ -1,0 +1,16 @@
+ext.Versions = [
+        APP_COMPAT: "1.2.0",
+        GRADLE    : "4.0.1",
+        NAVIGATION: "2.1.0"
+
+]
+
+ext.Dependencies = [
+        APP_COMPAT: "androidx.appcompat:appcompat:${Versions.APP_COMPAT}",
+        GRADLE    : "com.android.tools.build:gradle:${Versions.GRADLE}",
+
+        NAVIGATION: [
+                FRAGMENT: "androidx.navigation:navigation-fragment:${Versions.NAVIGATION}",
+                UI      : "androidx.navigation:navigation-ui:${Versions.NAVIGATION}"
+        ]
+]

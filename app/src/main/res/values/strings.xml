@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="next">Зарегистрироваться!</string>
+    <string name="previous">Previous</string>
+    <string name="date_editText">Введите дату рождения</string>
+    <string name="family_editText">Введите фамилию</string>
+    <string name="name_editText">Введите имя</string>
+    <string name="registration_string">РЕГИСТРАЦИЯ</string>
+    <string name="button_set_date_string">Выберете дату рождения</string>
+    <string name="hint_text_date">Ваша дата рождения:</string>
+    <string name="hello_second_fragment">Hello second fragment</string>
+</resources>
